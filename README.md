@@ -40,11 +40,11 @@ Modules Used:
 Flow of the Project =>
 
   1. Creation of a post => 
-    1) Call goes to post service and emits PostCreated event which goes to event service.
-    2) Event service publishes the event to all the service.
-    3) If the event is relevant to any service it takes action on that event in this case Query service for storing the posts data.
+    1. Call goes to post service and emits PostCreated event which goes to event service.
+    2. Event service publishes the event to all the service.
+    3. If the event is relevant to any service it takes action on that event in this case Query service for storing the posts data.
     
   2. Creation of a comment => 
-    1) Call goes to comments service and emits CommentCreated event which goes to event service.
-    2) Event service publishes the event to all the service.
-    3) If the event is relevant to any service it takes action on that event in this case Query service for storing the comments data and Moderation service for moderating comment.
+    1. Call goes to comments service and emits CommentCreated event which goes to event service.
+    2. Event service publishes the event to all the service.
+    3. If the event is relevant to any service it takes action on that event in this case Query service for storing the comments data and Moderation service for moderating comment.
